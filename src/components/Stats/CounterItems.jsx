@@ -55,6 +55,7 @@ export const CounterItems = ({ counters }) => {
                                 counterStarted={counterStarted}
                                 value={counter.value}
                                 label={counter.label}
+                                isLastTwo={index >= counters.length - 2}
                             />
                         ))}
                         

@@ -20,12 +20,6 @@ const NavigationMenu = () => {
         { id: 21, title: 'Home', active: true },
         { id: 22, title: 'About', active: false },
         { id: 23, title: 'Services', active: false },
-        { id: 24, title: 'Pages', active: false, dropdown: true, subItems: [
-            { id: 25, title: 'Blog Page' },
-            { id: 26, title: 'Elements Page' },
-            { id: 27, title: '404 Page' },
-            { id: 32, title: 'Landing Page' }
-        ]},
         { id: 28, title: 'Contact', active: false }
     ];
 

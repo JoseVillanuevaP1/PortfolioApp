@@ -2003,11 +2003,27 @@ a.page-numbers:hover {
     .course-video iframe {
         height: 250px;
     }
+
+    .w3l-btn .btn-primary {
+        margin-left: 1rem;
+    }
+    
+    .w3l-btn .btn-primary {
+        margin-right: 1.5rem;
+    }
 }
 
 @media (max-width: 415px) {
     .course-video iframe {
         height: 210px;
+    }
+
+    .w3l-btn .btn-primary {
+        margin-left: 0.5rem;
+    }
+    
+    .w3l-btn .btn-primary {
+        margin-right: 1.5rem;
     }
 }
 
@@ -2015,6 +2031,15 @@ a.page-numbers:hover {
     .course-video iframe {
         height: 180px;
     }
+
+    .w3l-btn .btn-primary {
+        margin-left: 0.2rem;
+    }
+
+    .w3l-btn .btn-primary {
+        margin-right: 0.25rem;
+    }
+
 }
 
 /* blog post single */

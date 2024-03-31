@@ -8,15 +8,17 @@ const BrandsView = () => {
         arrows: false,
         dots: false,
         infinite: true,
+        centerMode: true,
+        centerPadding: '3rem',
         speed: 1500,
         autoplay: true,
-        slidesToShow: 4,
+        slidesToShow: 6,
         slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                 }
             },
@@ -33,7 +35,7 @@ const BrandsView = () => {
     return (
         <section className="w3l-brands py-md-5 py-4">
             <div className="container py-lg-2 HomePageClientLogos">
-                <div className="align-items-center">
+                <div className="align-items-center" id='brands-slider-container'>
                     <Slider {...settings}>
                         <div>
                             <img src="/src/assets/images/logo1.png" alt="Brand" />
@@ -47,7 +49,12 @@ const BrandsView = () => {
                         <div>
                             <img src="/src/assets/images/logo4.png" alt="Brand" />
                         </div>
-                        {/* Agrega más imágenes aquí según sea necesario */}
+                        <div>
+                            <img src="/src/assets/images/logo5.png" alt="Brand" />
+                        </div>
+                        <div>
+                            <img src="/src/assets/images/logo6.png" alt="Brand" />
+                        </div>
                     </Slider>
                 </div>
             </div>

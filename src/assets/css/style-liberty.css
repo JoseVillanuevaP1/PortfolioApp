@@ -21025,6 +21025,10 @@ button.owl-prev {
   bottom: 50%;
 }
 
+.w3l-brands {
+  background: #05242a;
+}
+
 button.owl-prev {
   left: 60px;
 }
@@ -23850,11 +23854,6 @@ pre {
   }
 }
 /*--//Elements--*/
-
-.w3l-brands {
-  background: #397f6a;
-}
-
 img.wp-smiley,
 img.emoji {
     display: inline !important;

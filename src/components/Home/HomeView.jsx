@@ -22,7 +22,7 @@ const HomeView = () => {
             <div className="container pt-lg-5 pt-md-4">
                 <div className="row pt-lg-5 pt-4">
                     <div className="col-lg-7 banner-info-grid pt-lg-0 pt-5 HomePageHeroHeader">
-                        <h1 className="mb-3">Hola, Soy Jose Villanueva</h1>
+                        <h1 className="mb-3">Hola, Soy Jose Moises</h1>
                         <h3 className="mb-4"> <span className="typed-text"></span><span className="cursor">&nbsp;</span> </h3>
                         <p>Estudiante de Ingeniería especializado en desarrollo y programación de software. ¡Puedo darle a tu negocio un nuevo comienzo de inmediato!</p>
 
