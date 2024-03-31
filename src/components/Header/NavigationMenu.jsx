@@ -17,10 +17,10 @@ const DropdownMenu = ({ title, items }) => {
 
 const NavigationMenu = () => {
     const menuItems = [
-        { id: 21, title: 'Home', active: true },
-        { id: 22, title: 'About', active: false },
-        { id: 23, title: 'Services', active: false },
-        { id: 28, title: 'Contact', active: false }
+        { id: 21, title: 'Inicio', active: true },
+        { id: 22, title: 'Sobre Mi', active: false },
+        { id: 23, title: 'Servicios', active: false },
+        { id: 28, title: 'Contacto', active: false }
     ];
 
     return (
