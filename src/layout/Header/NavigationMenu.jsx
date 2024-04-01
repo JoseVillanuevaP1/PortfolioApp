@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const DropdownMenu = ({ title, items }) => {
     return (
@@ -7,7 +8,7 @@ const DropdownMenu = ({ title, items }) => {
             <ul className="dropdown-menu depth_0">
                 {items.map((item, index) => (
                     <li key={index} className="menu-item nav-item">
-                        <a href="#" className="dropdown-item">{item.title}</a>
+                        <NavLink to={item.path} className="dropdown-item">{item.title}</NavLink>
                     </li>
                 ))}
             </ul>
@@ -16,21 +17,23 @@ const DropdownMenu = ({ title, items }) => {
 }
 
 const NavigationMenu = () => {
+    const location = useLocation();
+
     const menuItems = [
-        { id: 21, title: 'Inicio', active: true },
-        { id: 22, title: 'Sobre Mi', active: false },
-        { id: 23, title: 'Servicios', active: false },
+        { id: 21, title: 'Inicio', path: '/home' },
+        { id: 22, title: 'Sobre Mi', path: '/about' },
+        { id: 23, title: 'Servicios', path: '/' },
         // { 
         //     id: 29,
         //     title: 'Dropdown',
         //     dropdown: true,
         //     subItems: [
-        //         { id: 30, title: 'Subitem 1' },
-        //         { id: 31, title: 'Subitem 2' },
-        //         { id: 32, title: 'Subitem 3' }
+        //         { id: 30, title: 'Subitem 1', path: '/' },
+        //         { id: 31, title: 'Subitem 2', path: '/' },
+        //         { id: 32, title: 'Subitem 3', path: '/' }
         //     ]
         // },
-        { id: 28, title: 'Contacto', active: false }
+        { id: 28, title: 'Contacto', path: '/' }
     ];
 
     return (
@@ -39,8 +42,8 @@ const NavigationMenu = () => {
                 item.dropdown ? (
                     <DropdownMenu key={item.id} title={item.title} items={item.subItems} />
                 ) : (
-                    <li key={item.id} className={`menu-item menu-item-type-post_type menu-item-object-page nav-item ${item.active ? 'current-menu-item page_item current_page_item' : ''}`}>
-                        <a href="#" className={`nav-link ${item.active ? 'active' : ''}`}>{item.title}</a>
+                    <li key={item.id} className={`menu-item menu-item-type-post_type menu-item-object-page nav-item ${location.pathname === item.path ? 'current-menu-item page_item current_page_item' : ''}`}>
+                        <NavLink to={item.path} className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}>{item.title}</NavLink>
                     </li>
                 )
             ))}

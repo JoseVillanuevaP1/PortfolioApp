@@ -16,15 +16,17 @@ function App() {
 
   return (
     <>
-      <HeaderView />
 
-      {/* Aqui esta el contenido */}
       <Router>
+        <HeaderView />
+
+        {/* Aqui esta el contenido */}
         <ContentView />
+
+        <FooterView />
+        <MoveTop />
       </Router>
 
-      <FooterView />
-      <MoveTop />
     </>
   )
 }
