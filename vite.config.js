@@ -9,7 +9,8 @@ export default defineConfig({
       // Define el alias para la carpeta de assets
       '@assets': '/src/assets',
       '@utils': '/src/utils',
-      '@components': './components'
+      '@components': '/src/components',
+      '@layout': '/src/layout',
     }
   }
 })

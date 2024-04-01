@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
+
+:root {
+    --skill-color: #061b20;
+    --skill-color--item: #007E6A;
+}
+
+[data-theme="dark"] {
+    --skill-color: #00ffffff;
+    --skill-color--item: #ffffff;
+}
+
+.text-sphere {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tagcloud {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 1.3em;
+    max-width: 90%;
+}
+
+.tagcloud--item {
+    color: var(--skill-color);
+    cursor: crosshair;
+}
+.tagcloud--item:hover {
+    color: var(--skill-color--item);
+}

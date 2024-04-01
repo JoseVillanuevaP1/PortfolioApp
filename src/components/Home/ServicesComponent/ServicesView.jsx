@@ -3,12 +3,15 @@ import { ServiceItems } from './ServiceItems';
 
 const ServicesView = () => {
     return (
-        <section className="about-section py-5">
-            <div className="container py-lg-5 py-md-4 py-2 HomePageServices">
-                <ServiceTitle />
-                <ServiceItems />
-            </div>
-        </section>
+        <>
+            <section className="about-section py-5">
+                <div className="container py-lg-5 py-md-4 py-2 HomePageServices">
+                    <ServiceTitle />
+                    <ServiceItems />
+                </div>
+            </section>
+        </>
+
     );
 }
 

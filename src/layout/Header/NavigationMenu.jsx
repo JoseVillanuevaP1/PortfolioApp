@@ -20,6 +20,16 @@ const NavigationMenu = () => {
         { id: 21, title: 'Inicio', active: true },
         { id: 22, title: 'Sobre Mi', active: false },
         { id: 23, title: 'Servicios', active: false },
+        // { 
+        //     id: 29,
+        //     title: 'Dropdown',
+        //     dropdown: true,
+        //     subItems: [
+        //         { id: 30, title: 'Subitem 1' },
+        //         { id: 31, title: 'Subitem 2' },
+        //         { id: 32, title: 'Subitem 3' }
+        //     ]
+        // },
         { id: 28, title: 'Contacto', active: false }
     ];
 

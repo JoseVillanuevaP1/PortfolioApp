@@ -29,11 +29,7 @@ function GalleryView() {
                     />
 
                     <Lightbox
-                        plugins={[Captions, Download, Fullscreen, Zoom, Thumbnails]}
-                        captions={{
-                            showToggle: true,
-                            descriptionTextAlign: 'end',
-                        }}
+                        plugins={[Download, Fullscreen, Zoom, Thumbnails]}
                         index={index}
                         open={index >= 0}
                         close={() => setIndex(-1)}

@@ -1,27 +1,16 @@
-import React from 'react';
-import { AboutInfo } from './AboutInfo';
+import React from 'react'
+import { BannerView } from './Banner/BannerView'
+import AboutSectionView from './AboutSection/AboutSectionView'
+import JoinView from './Join/JoinView'
+import TestimonialsView from './Testimonials/TestimonialsView'
 
-const AboutView = () => {
+export default function AboutView() {
     return (
-        <section className="w3l-about py-5" id="about">
-            <div className="container py-md-5 py-2 HomePageAbout">
-                <div className="row w3l-row">
-                    <AboutImage />
-                    <AboutInfo 
-                        title={'Ingeniero y desarrollador de Software de Perú'}
-                    />
-                </div>
-            </div>
-        </section>
-    );
+        <>
+            <BannerView />
+            <AboutSectionView />
+            <JoinView />
+            <TestimonialsView />
+        </>
+    )
 }
-
-const AboutImage = () => {
-    return (
-        <div className="col-lg-5 my-image pe-lg-5 mb-lg-0 mb-md-5 mb-4">
-            <img src="/src/assets/images/about.jpg" alt="" className="img-fluid" />
-        </div>
-    );
-}
-
-export default AboutView;
