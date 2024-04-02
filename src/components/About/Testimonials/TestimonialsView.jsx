@@ -7,41 +7,40 @@ import './Testimonial.css'
 const Testimonials = () => {
     const testimonialData = [
         {
-            name: "William Noah",
+            name: "team1",
             role: "Photographer",
-            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            quote: "Lorem ipsum dolor sit amet init consectetur et beatae elit. Velitae beatae laudantium voluptate rem ullam dolore nisi voluptatibus est quasi, doloribus  tempora."
         },
         {
-            name: "Benjamin",
+            name: "team2",
             role: "Web designer",
-            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            quote: "Lorem ipsum dolor sit amet init consectetur et beatae elit. Velitae beatae laudantium voluptate rem ullam dolore nisi voluptatibus est quasi, doloribus  tempora."
         },
         {
-            name: "Isabella Luna",
+            name: "team3",
             role: "Backend Developer",
-            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            quote: "Lorem ipsum dolor sit amet init consectetur et beatae elit. Velitae beatae laudantium voluptate rem ullam dolore nisi voluptatibus est quasi, doloribus  tempora."
         },
         {
-            name: "William Noah",
+            name: "team4",
             role: "Photographer",
-            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            quote: "Lorem ipsum dolor sit amet init consectetur et beatae elit. Velitae beatae laudantium voluptate rem ullam dolore nisi voluptatibus est quasi, doloribus  tempora."
         },
         {
-            name: "Benjamin",
+            name: "team3",
             role: "Web designer",
-            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            quote: "Lorem ipsum dolor sit amet init consectetur et beatae elit. Velitae beatae laudantium voluptate rem ullam dolore nisi voluptatibus est quasi, doloribus  tempora."
         },
         {
-            name: "Isabella Luna",
+            name: "team2",
             role: "Backend Developer",
-            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            quote: "Lorem ipsum dolor sit amet init consectetur et beatae elit. Velitae beatae laudantium voluptate rem ullam dolore nisi voluptatibus est quasi, doloribus  tempora."
         },
     ];
 
     useEffect(() => {
-        // Cleanup function to destroy the carousel when component unmounts
         return () => {
-            document.querySelector('.slick-list').removeAttribute('style');
+            document.querySelector('.slick-list')?.removeAttribute('style');
         };
     }, []);
 
@@ -75,39 +74,42 @@ const Testimonials = () => {
     };
 
     return (
-        <section className="w3l-clients mb-4" id="testimonials">
+        <section className="w3l-clients" id="testimonials">
             <div className="midd-w3 py-5">
                 <div className="container py-lg-5 py-md-3 AboutPageTestimonials">
 
-                    <div className="title-heading-w3 mx-auto text-center mb-sm-5 mb-5">
+                    <div className="title-heading-w3 mx-auto text-center mb-sm-5 mb-4">
                         <span className="w3l-title-small">Reviews</span>
                         <h3 className="w3l-title-main">My clients and Testimonials</h3>
                     </div>
 
-                    <Slider {...settings}>
-                        {testimonialData.map((testimonial, index) => (
-                            <div key={index}>
-                                <div className="item mx-3">
-                                    <div className="testimonial-content">
-                                        <div className="testimonial">
-                                            <blockquote>
-                                                <q>{testimonial.quote}</q>
-                                            </blockquote>
-                                            <div className="testi-des">
-                                                <div className="test-img">
-                                                    <img src={`https://via.placeholder.com/150/000000/FFFFFF/?text=${testimonial.name}`} className="img-fluid" alt="client-img" />
-                                                </div>
-                                                <div className="peopl align-self">
-                                                    <h3>{testimonial.name}</h3>
-                                                    <p className="indentity">{testimonial.role}</p>
+                    <div id="owl-demo1" class="owl-carousel owl-theme mt-4 py-2 mb-5">
+                        <Slider {...settings}>
+                            {testimonialData.map((testimonial, index) => (
+                                <div key={index}>
+                                    <div className="item mx-3">
+                                        <div className="testimonial-content">
+                                            <div className="testimonial">
+                                                <blockquote>
+                                                    <q>{testimonial.quote}</q>
+                                                </blockquote>
+                                                <div className="testi-des">
+                                                    <div className="test-img">
+                                                        <img src={`/src/assets/images/${testimonial.name}.jpg`} className="img-fluid" alt="client-img" />
+                                                    </div>
+                                                    <div className="peopl align-self">
+                                                        <h3>{testimonial.name}</h3>
+                                                        <p className="indentity">{testimonial.role}</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
-                    </Slider>
+                            ))}
+                        </Slider>
+                    </div>
+
 
                 </div>
             </div>
