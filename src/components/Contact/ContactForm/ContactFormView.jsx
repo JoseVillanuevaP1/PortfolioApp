@@ -22,7 +22,7 @@ const ContactFormView = () => {
                     </div>
                 </div>
                 {/* Aqui esta el mapa XD */}
-                <MapView />
+                {/* <MapView /> */}
             </div>
         </section>
     );
