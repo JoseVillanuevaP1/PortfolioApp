@@ -49,8 +49,8 @@ const Testimonials = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3, // Mostrar 3 testimonios a la vez
-        slidesToScroll: 3, // Desplazar 3 testimonios a la vez
+        slidesToShow: 3,
+        slidesToScroll: 3,
         responsive: [
             {
                 breakpoint: 1024,
@@ -83,7 +83,7 @@ const Testimonials = () => {
                         <h3 className="w3l-title-main">My clients and Testimonials</h3>
                     </div>
 
-                    <div id="owl-demo1" className="owl-carousel owl-theme mt-4 py-2 mb-5">
+                    <div id="owl-demo1" className="owl-carousel owl-theme mt-4 pt-2 mb-5">
                         <Slider {...settings}>
                             {testimonialData.map((testimonial, index) => (
                                 <div key={index}>

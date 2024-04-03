@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const DropdownMenu = ({ title, items }) => {
     return (
@@ -17,6 +17,7 @@ const DropdownMenu = ({ title, items }) => {
 }
 
 const NavigationMenu = () => {
+    const location = useLocation();
 
     const menuItems = [
         { id: 21, title: 'Inicio', path: '/' },
@@ -24,6 +25,10 @@ const NavigationMenu = () => {
         { id: 23, title: 'Servicios', path: '/services' },
         { id: 28, title: 'Contacto', path: '/contact' }
     ];
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Move the window to the top when the location changes
+    }, [location]);
 
     return (
         <ul id="menu-main-menu" className="navbar-nav ms-lg-auto align-items-center">
@@ -41,3 +46,4 @@ const NavigationMenu = () => {
 }
 
 export default NavigationMenu;
+
