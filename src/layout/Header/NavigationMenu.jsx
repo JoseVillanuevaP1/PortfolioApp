@@ -19,7 +19,7 @@ const DropdownMenu = ({ title, items }) => {
 const NavigationMenu = () => {
 
     const menuItems = [
-        { id: 21, title: 'Inicio', path: '/home' },
+        { id: 21, title: 'Inicio', path: '/' },
         { id: 22, title: 'Sobre Mi', path: '/about' },
         { id: 23, title: 'Servicios', path: '/services' },
         { id: 28, title: 'Contacto', path: '/contact' }
