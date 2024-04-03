@@ -83,7 +83,7 @@ const Testimonials = () => {
                         <h3 className="w3l-title-main">My clients and Testimonials</h3>
                     </div>
 
-                    <div id="owl-demo1" class="owl-carousel owl-theme mt-4 py-2 mb-5">
+                    <div id="owl-demo1" className="owl-carousel owl-theme mt-4 py-2 mb-5">
                         <Slider {...settings}>
                             {testimonialData.map((testimonial, index) => (
                                 <div key={index}>
@@ -95,7 +95,7 @@ const Testimonials = () => {
                                                 </blockquote>
                                                 <div className="testi-des">
                                                     <div className="test-img">
-                                                        <img src={`/src/assets/images/${testimonial.name}.jpg`} className="img-fluid" alt="client-img" />
+                                                        <img src={`/images/${testimonial.name}.jpg`} className="img-fluid" alt="client-img" />
                                                     </div>
                                                     <div className="peopl align-self">
                                                         <h3>{testimonial.name}</h3>

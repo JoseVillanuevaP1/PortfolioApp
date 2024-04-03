@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
-import { slides } from '@assets/data.ts';
+import { slides } from '/src/data/data.ts';
 import 'yet-another-react-lightbox/styles.css';
 import {
     Captions,

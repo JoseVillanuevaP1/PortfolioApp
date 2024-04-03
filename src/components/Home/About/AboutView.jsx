@@ -21,7 +21,7 @@ const AboutView = () => {
 const AboutImage = () => {
     return (
         <div className="col-lg-5 my-image pe-lg-5 mb-lg-0 mb-md-5 mb-4">
-            <img src="/src/assets/images/about.jpg" alt="" className="img-fluid" />
+            <img src="/images/about.jpg" alt="" className="img-fluid" />
         </div>
     );
 }

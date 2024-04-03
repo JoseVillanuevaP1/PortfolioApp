@@ -375,7 +375,7 @@ select:disabled {
 [type=reset],
 [type=submit],
 button {
-  -webkit-appearance: button
+  appearance: button
 }
 
 [type=button]:not(:disabled),
@@ -436,7 +436,7 @@ legend+* {
 
 [type=search] {
   outline-offset: -2px;
-  -webkit-appearance: textfield
+  appearance: textfield
 }
 
 ::-webkit-search-decoration {
@@ -18001,8 +18001,8 @@ p.white {
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("@assets/fonts/fa-brands-400.eot");
-  src: url("@assets/fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("@assets/fonts/fa-brands-400.woff2") format("woff2"), url("@assets/fonts/fa-brands-400.woff") format("woff"), url("@assets/fonts/fa-brands-400.ttf") format("truetype"), url("@assets/fonts/fa-brands-400.svg#fontawesome") format("svg");
+  src: url("/fonts/fa-brands-400.eot");
+  src: url("/fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/fonts/fa-brands-400.woff2") format("woff2"), url("/fonts/fa-brands-400.woff") format("woff"), url("/fonts/fa-brands-400.ttf") format("truetype"), url("/fonts/fa-brands-400.svg#fontawesome") format("svg");
 }
 
 .fab {
@@ -18015,8 +18015,8 @@ p.white {
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("@assets/fonts/fa-regular-400.eot");
-  src: url("@assets/fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("@assets/fonts/fa-regular-400.woff2") format("woff2"), url("@assets/fonts/fa-regular-400.woff") format("woff"), url("@assets/fonts/fa-regular-400.ttf") format("truetype"), url("@assets/fonts/fa-regular-400.svg#fontawesome") format("svg");
+  src: url("/fonts/fa-regular-400.eot");
+  src: url("/fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url(" /fonts/fa-regular-400.woff2") format("woff2"), url(" /fonts/fa-regular-400.woff") format("woff"), url(" /fonts/fa-regular-400.ttf") format("truetype"), url(" /fonts/fa-regular-400.svg#fontawesome") format("svg");
 }
 
 .far {
@@ -18029,8 +18029,8 @@ p.white {
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("@assets/fonts/fa-solid-900.eot");
-  src: url("@assets/fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("@assets/fonts/fa-solid-900.woff2") format("woff2"), url("@assets/fonts/fa-solid-900.woff") format("woff"), url("@assets/fonts/fa-solid-900.ttf") format("truetype"), url("@assets/fonts/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("/fonts/fa-solid-900.eot");
+  src: url("/fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url(" /fonts/fa-solid-900.woff2") format("woff2"), url(" /fonts/fa-solid-900.woff") format("woff"), url(" /fonts/fa-solid-900.ttf") format("truetype"), url(" /fonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 
 .fa,

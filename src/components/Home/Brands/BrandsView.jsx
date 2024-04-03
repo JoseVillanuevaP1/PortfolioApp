@@ -3,12 +3,12 @@ import { BrandItem } from './BrandItem';
 import { BrandsSlider } from './BrandsSlider';
 
 const brandImages = [
-    "/src/assets/images/logo1.png",
-    "/src/assets/images/logo2.png",
-    "/src/assets/images/logo3.png",
-    "/src/assets/images/logo4.png",
-    "/src/assets/images/logo5.png",
-    "/src/assets/images/logo6.png",
+    "/images/logo1.png",
+    "/images/logo2.png",
+    "/images/logo3.png",
+    "/images/logo4.png",
+    "/images/logo5.png",
+    "/images/logo6.png",
 ];
 
 const BrandsView = () => {

@@ -8,7 +8,7 @@ export default function AboutView() {
     return (
         <>
             <BannerView 
-                backgroundImage='/src/assets/images/banner1.jpg'
+                backgroundImage='/images/banner1.jpg'
                 title='Sobre Mi'
                 breadcrumbs={[
                     { text: 'Inicio', link: '/home' },

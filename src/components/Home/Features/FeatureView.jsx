@@ -13,7 +13,7 @@ const FeatureView = () => {
                             <FeatureItems />
                         </div>
                         <div className="col-lg-5 ps-lg-5 my-image mt-lg-0 mt-4">
-                            <img src="/src/assets/images/banner.png" alt="" className="img-fluid" />
+                            <img src="/images/banner.png" alt="" className="img-fluid" />
                         </div>
                     </div>
                 </div>

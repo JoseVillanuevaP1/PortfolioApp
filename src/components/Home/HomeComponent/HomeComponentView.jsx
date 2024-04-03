@@ -31,7 +31,7 @@ const HomeComponentView = () => {
                             <a className="btn btn-style transparent-btn mt-5" href="#url"> Mi Portafolio </a>
                         </div>
                         <div className="col-lg-5 text-lg-end my-image mt-lg-0 mt-4">
-                            <img src="/src/assets/images/banner.png" className="img-fluid" alt="Banner" />
+                            <img src="/images/banner.png" className="img-fluid" alt="Banner" />
                         </div>
                     </div>
                 </div>

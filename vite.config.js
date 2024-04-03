@@ -7,7 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       // Define el alias para la carpeta de assets
-      '@assets': '/src/assets',
+      '@assets': '/assets',
       '@utils': '/src/utils',
       '@components': '/src/components',
       '@layout': '/src/layout',

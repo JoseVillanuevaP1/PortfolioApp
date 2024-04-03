@@ -7,7 +7,7 @@ const ContactView = () => {
     return (
         <>
             <BannerView
-                backgroundImage='/src/assets/images/banner1.jpg'
+                backgroundImage='/images/banner1.jpg'
                 title='Contactame'
                 breadcrumbs={[
                     { text: 'Inicio', link: '/home' },

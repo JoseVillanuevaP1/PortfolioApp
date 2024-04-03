@@ -4,9 +4,12 @@ import { GalleryItem } from './GalleryItem';
 // Componente principal para la galería de servicios
 const GalleryView = () => {
   const galleryItems = [
-    { imageUrl: "https://wp.w3layouts.com/ui-portfolio/wp-content/themes/ui-portfolio/assets/images/blog3.jpg", serviceLink: "#url1", serviceName: "Discuss the project" },
-    { imageUrl: "https://wp.w3layouts.com/ui-portfolio/wp-content/themes/ui-portfolio/assets/images/blog4.jpg", serviceLink: "#url2", serviceName: "Develop & elaborate" },
-    { imageUrl: "https://wp.w3layouts.com/ui-portfolio/wp-content/themes/ui-portfolio/assets/images/blog6.jpg", serviceLink: "#url3", serviceName: "Final approvement" }
+    { imageUrl: "./images/blog1.jpg", serviceLink: "#", serviceName: "Discuss the project" },
+    { imageUrl: "./images/blog2.jpg", serviceLink: "#", serviceName: "Develop & elaborate" },
+    { imageUrl: "./images/blog3.jpg", serviceLink: "#", serviceName: "Final approvement" },
+    { imageUrl: "./images/blog4.jpg", serviceLink: "#", serviceName: "Final approvement" },
+    { imageUrl: "./images/blog5.jpg", serviceLink: "#", serviceName: "Discuss the project" },
+    { imageUrl: "./images/blog6.jpg", serviceLink: "#", serviceName: "Develop & elaborate" },
   ];
 
   return (
@@ -15,7 +18,7 @@ const GalleryView = () => {
         <div className="title-heading-w3 mx-auto text-center mb-sm-5 mb-4">
           <h3 className="w3l-title-main">Innovative solutions to boost your creative projects</h3>
         </div>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center gy-3">
           {galleryItems.map((item, index) => (
             <GalleryItem
               key={index}

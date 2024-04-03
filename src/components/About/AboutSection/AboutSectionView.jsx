@@ -9,7 +9,7 @@ const AboutSectionView = () => {
                 <div className="container py-lg-5 py-md-4 py-2 AboutPageAbout">
                     <div className="content-info-in row">
                         <div className="content-gd col-lg-5 pe-lg-5 my-image">
-                            <img src="/src/assets/images/about.jpg" alt="" className="img-fluid" />
+                            <img src="/images/about.jpg" alt="" className="img-fluid" />
                         </div>
                         <div className="content-gd col-lg-7 mt-lg-0 mt-5 align-self ps-lg-5">
 

@@ -7,7 +7,7 @@ export default function ServicesView() {
     return (
         <>
             <BannerView
-                backgroundImage='/src/assets/images/banner1.jpg'
+                backgroundImage='/images/banner1.jpg'
                 title='Mis Servicios'
                 breadcrumbs={[
                     { text: 'Inicio', link: '/home' },
