@@ -7,7 +7,7 @@ const JoinView = () => {
     <section className="w3l-join py-5" id="join">
       <style>
         {`.w3l-join {
-          background-image: url(/src/assets/images/banner1.jpg);
+          background-image: url(/images/banner1.jpg);
         }`}
       </style>
       <div className="container py-md-5 py-3 AboutPageCover">
